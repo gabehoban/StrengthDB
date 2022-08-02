@@ -8,7 +8,7 @@ import router from "./controller/workouts";
 // const friday = require("./models/fridays")
 
 const app = express();
-const PORT = 3000;
+const PORT = 8482;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
