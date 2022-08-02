@@ -1,0 +1,171 @@
+{
+  "0": {
+    "day": "Sunday",
+    "type": "Rest Day"
+  },
+  "1": {
+    "day": "Monday",
+    "type": "Upper Power",
+    "WOD": [
+      {
+        "name": "Barbell Bench Press",
+        "dbName": "barbell_bench_press",
+        "sets": 4,
+        "reps": 5
+      },
+      {
+        "name": "Incline Dumbbell Bench Press",
+        "dbName": "incline_db_bench_press",
+        "sets": 4,
+        "reps": 8
+      },
+      {
+        "name": "Bent Over Row",
+        "dbName": "bent_over_rows",
+        "sets": 4,
+        "reps": 5
+      },
+      {
+        "name": "Lat Pull Down",
+        "dbName": "lat_pull_down",
+        "sets": 4,
+        "reps": 8
+      },
+      {
+        "name": "Overhead Press",
+        "dbName": "overhead_press",
+        "sets": 4,
+        "reps": 8
+      },
+      {
+        "name": "Barbell Curl",
+        "dbName": "barbell_curls",
+        "sets": 3,
+        "reps": 8
+      }
+    ]
+  },
+  "2": {
+    "day": "Tuesday",
+    "type": "Lower Power",
+    "WOD": [
+      {
+        "name": "Squat",
+        "dbName": "squat",
+        "sets": 4,
+        "reps": 5
+      },
+      {
+        "name": "Deadlift",
+        "dbName": "deadlift",
+        "sets": 4,
+        "reps": 5
+      },
+      {
+        "name": "Leg Press",
+        "dbName": "leg_press",
+        "sets": 5,
+        "reps": 15
+      },
+      {
+        "name": "Leg Curl",
+        "dbName": "leg_curl",
+        "sets": 5,
+        "reps": 15
+      },
+      {
+        "name": "Calf Raise",
+        "dbName": "calf_raise",
+        "sets": 5,
+        "reps": 15
+      }
+    ]
+  },
+  "3": {
+    "day": "Wensday",
+    "type": "Rest Day"
+  },
+  "4": {
+    "day": "Thursday",
+    "type": "Upper Hypertrophy",
+    "WOD": [
+      {
+        "name": "Incline Barbell Bench Press",
+        "dbName": "incline_barbell_bench_press",
+        "sets": 4,
+        "reps": 15
+      },
+      {
+        "name": "Cable Crossover",
+        "dbName": "cable_crossover",
+        "sets": 4,
+        "reps": 15
+      },
+      {
+        "name": "Seated Cable Row",
+        "dbName": "seated_cable_row",
+        "sets": 4,
+        "reps": 15
+      },
+      {
+        "name": "Single Dumbbell Row",
+        "dbName": "single_db_row",
+        "sets": 4,
+        "reps": 15
+      },
+      {
+        "name": "Dumbbell Curl",
+        "dbName": "db_curl",
+        "sets": 4,
+        "reps": 15
+      },
+      {
+        "name": "Tricep Extensions",
+        "dbName": "tricep_extensions",
+        "sets": 4,
+        "reps": 15
+      }
+    ]
+  },
+  "5": {
+    "day": "Friday",
+    "type": "Lower Hypertrophy",
+    "WOD": [
+      {
+        "name": "Squat",
+        "dbName": "squat",
+        "sets": 4,
+        "reps": 15
+      },
+      {
+        "name": "Dumbbell Lunge",
+        "dbName": "db_lunge",
+        "sets": 4,
+        "reps": 15
+      },
+      {
+        "name": "Leg Extensions",
+        "dbName": "leg_extensions",
+        "sets": 4,
+        "reps": 15
+      },
+      {
+        "name": "Leg Curl",
+        "dbName": "leg_curl",
+        "sets": 4,
+        "reps": 15
+      },
+      {
+        "name": "Seated Calf Raise",
+        "dbName": "seated_calf_raise",
+        "sets": 4,
+        "reps": 15
+      }
+    ]
+  },
+  "6": {
+    "day": "Saturday",
+    "type": "Rest Day"
+  }
+
+}
