@@ -36,6 +36,8 @@ const Thursday = sequelize.define("thursday", {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+},{
+  timestamps: false
 });
 
 export default Thursday;

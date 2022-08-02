@@ -1,4 +1,5 @@
 let day = "";
+let WOD = {};
 
 $(document).ready(function () {
   init();
@@ -8,8 +9,7 @@ async function init() {
   const d = new Date();
   day = d.getDay();
 
-  let response = await fetch(`http://localhost:3000/api/${day}`);
-  // let response = await fetch(`http://test-strengthdb.loca.lt/api/${day}`);
+  let response = await fetch(`/api/${day}`);
   if (response.ok) {
     let json = await response.json();
     const element1 = document.getElementsByClassName("title")[0];
@@ -55,6 +55,7 @@ async function init() {
     buttonContainer1.innerHTML = injectedHTML;
 
     checkCompleted(json.WOD);
+    WOD = json.WOD;
   } else {
     alert("HTTP-Error: " + response.status);
   }
@@ -92,7 +93,30 @@ function saveWeight(dbName) {
   closeModal(dbName);
 }
 
-function submit() {
+async function submit() {
+  let data = {};
+  let keys = [];
+  for(const key  in localStorage) {
+    keys.push(key);
+  }
+
+  for(let x=0;x<WOD.length;x++) {
+    if (keys.includes(WOD[x].dbName)) {
+      const value = localStorage.getItem(WOD[x].dbName);
+      data[WOD[x].dbName] = parseInt(value);
+    }
+  }
+  data["date"] = new Date().toISOString().slice(0,10);
+
+  let response = await fetch(`/api/${day}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8'
+    },
+    body: JSON.stringify(data)
+  });
+
   localStorage.clear();
   window.location.reload();
+  console.log(response.body)
 }

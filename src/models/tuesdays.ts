@@ -9,7 +9,7 @@ const Tuesday = sequelize.define("tuesday", {
     primaryKey: true,
   },
   date: {
-    type: DataTypes.DATE,
+    type: DataTypes.STRING,
     allowNull: false,
   },
   squat: {
@@ -32,6 +32,8 @@ const Tuesday = sequelize.define("tuesday", {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+},{
+  timestamps: false
 });
 
 export default Tuesday;
