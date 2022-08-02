@@ -18,7 +18,7 @@ app.use(express.static(__dirname + "/public"));
 sequelize
   .sync()
   .then(() => {
-    app.listen(PORT);
+    app.listen(PORT, '127.0.0.1');
     console.log("App listening on port " + PORT);
   })
   .catch((err) => {
