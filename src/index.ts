@@ -8,12 +8,16 @@ import router from "./controller/workouts";
 // const friday = require("./models/fridays")
 
 const app = express();
-const PORT = 8482;
+const PORT = 8484;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(router);
-app.use(express.static(__dirname + "/public"));
+if (process.env.NODE_ENV == "production") {
+  app.use(express.static(__dirname + "/../src/public"));
+} else {
+  app.use(express.static(__dirname + "/public"));
+}
 
 sequelize
   .sync()
